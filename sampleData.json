@@ -1,0 +1,156 @@
+{
+    "success": true,
+    "message": "Product retrived successfully",
+    "data": [
+        {
+            "_id": "665084e0a5ec0b14aac1589c",
+            "name": "Oppo Find X5 Pro",
+            "description": "The Oppo Find X5 Pro is a high-performance smartphone with advanced features and a sleek design.",
+            "price": 899,
+            "category": "Electronics",
+            "tags": [
+                "smartphone",
+                "Oppo",
+                "Android"
+            ],
+            "variants": [
+                {
+                    "type": "Color",
+                    "value": "Ceramic White",
+                    "_id": "665084e0a5ec0b14aac1589d"
+                },
+                {
+                    "type": "Color",
+                    "value": "Glaze Black",
+                    "_id": "665084e0a5ec0b14aac1589e"
+                },
+                {
+                    "type": "Storage Capacity",
+                    "value": "256GB",
+                    "_id": "665084e0a5ec0b14aac1589f"
+                },
+                {
+                    "type": "Storage Capacity",
+                    "value": "512GB",
+                    "_id": "665084e0a5ec0b14aac158a0"
+                }
+            ],
+            "inventory": {
+                "quantity": 46,
+                "inStock": true,
+                "_id": "665084e0a5ec0b14aac158a1"
+            },
+            "__v": 0
+        },
+        {
+            "_id": "665085c5a5ec0b14aac158ac",
+            "name": "Redmi Note 12 Pro",
+            "description": "The Redmi Note 12 Pro offers an exceptional balance of performance and value, featuring a powerful processor, high-quality camera, and long battery life.",
+            "price": 499,
+            "category": "Electronics",
+            "tags": [
+                "smartphone",
+                "Redmi",
+                "Android"
+            ],
+            "variants": [
+                {
+                    "type": "Color",
+                    "value": "Frosted Blue",
+                    "_id": "665085c5a5ec0b14aac158ad"
+                },
+                {
+                    "type": "Color",
+                    "value": "Phantom Black",
+                    "_id": "665085c5a5ec0b14aac158ae"
+                },
+                {
+                    "type": "Storage Capacity",
+                    "value": "128GB",
+                    "_id": "665085c5a5ec0b14aac158af"
+                },
+                {
+                    "type": "Storage Capacity",
+                    "value": "256GB",
+                    "_id": "665085c5a5ec0b14aac158b0"
+                }
+            ],
+            "inventory": {
+                "quantity": 173,
+                "inStock": true,
+                "_id": "665085c5a5ec0b14aac158b1"
+            },
+            "__v": 0
+        },
+        {
+            "_id": "6650e4b5017323d611c83258",
+            "name": "Redmi Note 12 Pro",
+            "description": "The Redmi Note 12 Pro offers an exceptional balance of performance and value, featuring a powerful processor, high-quality camera, and long battery life.",
+            "price": 499,
+            "category": "Electronics",
+            "tags": [
+                "smartphone",
+                "Redmi",
+                "Android"
+            ],
+            "variants": [
+                {
+                    "type": "Color",
+                    "value": "Frosted Blue",
+                    "_id": "6650e4b5017323d611c83259"
+                },
+                {
+                    "type": "Color",
+                    "value": "Phantom Black",
+                    "_id": "6650e4b5017323d611c8325a"
+                },
+                {
+                    "type": "Storage Capacity",
+                    "value": "128GB",
+                    "_id": "6650e4b5017323d611c8325b"
+                },
+                {
+                    "type": "Storage Capacity",
+                    "value": "256GB",
+                    "_id": "6650e4b5017323d611c8325c"
+                }
+            ],
+            "inventory": {
+                "quantity": 222,
+                "inStock": true,
+                "_id": "6650e4b5017323d611c8325d"
+            },
+            "__v": 0
+        },
+        {
+            "_id": "6650e908017323d611c83281",
+            "name": "iPhone 13",
+            "description": "A sleek and powerful smartphone with cutting-edge features.",
+            "price": 999,
+            "category": "Electronics",
+            "tags": [
+                "smartphone",
+                "Apple",
+                "iOS"
+            ],
+            "variants": [
+                {
+                    "type": "Color",
+                    "value": "Midnight Blue",
+                    "_id": "6650e908017323d611c83282"
+                },
+                {
+                    "type": "Storage Capacity",
+                    "value": "256GB",
+                    "_id": "6650e908017323d611c83283"
+                }
+            ],
+            "inventory": {
+                "quantity": 50,
+                "inStock": true,
+                "_id": "6650e908017323d611c83284"
+            },
+            "__v": 0
+        }
+    ]
+}

@@ -13,7 +13,7 @@ const createOrder = async (req: Request, res: Response) => {
     //for bonus section
 
     const product = await productServices.getSingleDataById(
-      zodParsedOrder.productId
+      zodParsedOrder.productId,
     );
     if (product) {
       if (product.inventory.quantity < zodParsedOrder.quantity) {
