@@ -104,10 +104,34 @@ const getSingleProduct = async (req: Request, res: Response) => {
       });
     }
   };
+  //__________________END of update product______
+
+  //DELETE PRODUCT BY ID
+const deleteSingleProduct = async (req: Request, res: Response) => {
+  try {
+    const id = req.params.productID;
+    const result = await productServices.deleteSingleProductFromDB(id);
+
+    res.status(200).json({
+      success: true,
+      message: 'Product deleted successfully!',
+      data: result,
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: 'Sorry!! could not deleted.',
+      data: error,
+    });
+  }
+};
+
+
 
 export const productController = {
   createProduct,
   getAllProduct,
   getSingleProduct,
   updateAProduct,
+  deleteSingleProduct,
 };

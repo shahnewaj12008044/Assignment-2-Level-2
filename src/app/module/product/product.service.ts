@@ -38,6 +38,12 @@ const updateProductFromDB = async (id: string, body: TProduct) => {
     return result;
 }
 
+//DELETE PRODUCT BY ID:
+const deleteSingleProductFromDB = async (id: string) => {
+    const result = await Product.deleteOne({ _id: id });
+    return result;
+}
+
 
   
 
@@ -46,4 +52,5 @@ export const productServices = {
     getAllProductsFromDB,
     getSingleDataById,
     updateProductFromDB,
+    deleteSingleProductFromDB,
 }
