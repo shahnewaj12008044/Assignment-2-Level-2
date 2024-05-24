@@ -28,10 +28,22 @@ const getSingleDataById = async(id:string) =>{
     return result;
 }
 
+//UPDATE PRODUCT BY ID:
+const updateProductFromDB = async (id: string, body: TProduct) => {
+    const result = await Product.findByIdAndUpdate(id, body, {
+        new: true,
+        runValidators: true,
+        overwrite: true,
+    });
+    return result;
+}
+
+
   
 
 export const productServices = {
     createProductIntoDb,
     getAllProductsFromDB,
     getSingleDataById,
+    updateProductFromDB,
 }

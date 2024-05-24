@@ -79,8 +79,35 @@ const getSingleProduct = async (req: Request, res: Response) => {
     }
   };
 
+  //________________Get single product by id is done__________
+
+  //UPDATE A PRODUCT BY ID CONTROLLER:
+  
+  const updateAProduct = async (req: Request, res: Response) => {
+    try {
+      const id = req.params.productID;
+      const body = req.body;
+      // console.log(body)
+      const result = await productServices.updateProductFromDB(id, body);
+      // console.log(result)
+  
+      res.status(200).json({
+        success: true,
+        message: 'Product updated successfully!',
+        data: result,
+      });
+    } catch (err) {
+      res.status(500).json({
+        success: false,
+        message: 'Sorry!! could not updated.',
+        data: err,
+      });
+    }
+  };
+
 export const productController = {
   createProduct,
   getAllProduct,
   getSingleProduct,
+  updateAProduct,
 };
