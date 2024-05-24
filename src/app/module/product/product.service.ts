@@ -8,7 +8,16 @@ const createProductIntoDb = async(productData : TProduct) =>{
 }
 
 //GET ALL DATA SERVICE FUNCTION:
-const getAllProductsFromDB = async () => {
+const getAllProductsFromDB = async (searchTerm: String) => {
+    if (searchTerm) {
+        const result = await Product.find({
+         $or:[
+          {name: { $regex: searchTerm, $options: "i" }},
+          {description:{$regex:searchTerm,$options:"i"}},
+          {tags:{$regex:searchTerm,$options:"i"}}
+         ]});
+        return result;
+      }
     const result = await Product.find();
     return result;
   };

@@ -31,13 +31,21 @@ const createProduct = async (req: Request, res: Response) => {
 //get all data from db
 const getAllProduct = async (req: Request, res: Response) => {
   try {
-
-    const result = await productServices.getAllProductsFromDB();
-    res.status(200).json({
-      success: true,
-      message: 'Product retrived successfully',
-      data: result,
-    });
+    const { searchTerm } = req.query;
+    const result = await productServices.getAllProductsFromDB(
+      searchTerm as string
+    );
+    if(result.length === 0){
+        res.status(404).json({
+          success:true,
+          message:"This Product is not available",
+        })
+      }else{
+      res.status(200).json({
+        success:true,
+        message:"Product retrived successfully",
+        data:result,
+      })}
   } catch (err) {
     res.status(500).json({
       success: false,
