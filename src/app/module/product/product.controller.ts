@@ -55,7 +55,32 @@ const getAllProduct = async (req: Request, res: Response) => {
   }
 };
 
+//_____________________End of Get All Product___________
+
+//GET A SINGLE DATA BY ID CONTROLLER:
+const getSingleProduct = async (req: Request, res: Response) => {
+    try {
+      const Id = req.params.productID;
+      // console.log(Id)
+      const result = await productServices.getSingleDataById(Id);
+      // console.log(result)
+  
+      res.status(200).json({
+        success: true,
+        message: 'Product is got successfully.',
+        data: result,
+      });
+    } catch (err) {
+      res.status(500).json({
+        success: false,
+        message: 'Something went wrong!!.',
+        error: err,
+      });
+    }
+  };
+
 export const productController = {
   createProduct,
   getAllProduct,
+  getSingleProduct,
 };

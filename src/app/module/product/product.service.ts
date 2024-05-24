@@ -22,8 +22,16 @@ const getAllProductsFromDB = async (searchTerm: String) => {
     return result;
   };
 
+  //GET A SINGLE PRODUCT BY ID:
+const getSingleDataById = async(id:string) =>{
+    const result = await Product.findById(id);
+    return result;
+}
+
+  
 
 export const productServices = {
     createProductIntoDb,
     getAllProductsFromDB,
+    getSingleDataById,
 }
