@@ -1,4 +1,4 @@
-import { Model } from "mongoose";
+
 
 // TypeScript types
 export type TVariant = {
