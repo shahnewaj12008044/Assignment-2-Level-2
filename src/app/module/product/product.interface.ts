@@ -1,5 +1,3 @@
-
-
 // TypeScript types
 export type TVariant = {
   type: string;
@@ -11,7 +9,7 @@ export type TInventory = {
   inStock: boolean;
 };
 
-export type TProduct ={
+export type TProduct = {
   name: string;
   description: string;
   price: number;
@@ -20,5 +18,3 @@ export type TProduct ={
   variants: TVariant[];
   inventory: TInventory;
 };
-
-
