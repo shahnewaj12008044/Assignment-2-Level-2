@@ -469,8 +469,8 @@ For starting the server:  `npm run start:dev`
     "productId": "665084e0a5ec0b14aac1589c",
     "price": 999,
     "quantity": 27
-}
-    ```
+  }
+```
     
 - **Response**:
     
