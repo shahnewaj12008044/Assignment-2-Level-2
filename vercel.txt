@@ -1,0 +1,23 @@
+1.vercel deployment
+    a.Through CLI.
+        -install vercel
+        (first time)
+            -npm i -g vercel
+            -vercel -v
+            -vercel login
+            -vercel --prod
+
+            (for every project)
+            -vercel --prod
+
+            -go to the inpact link>project name>project menu> copy domains
+        -Without installing vercel
+
+        (for first time vercel login ):
+        npx vercel login
+            -npx vercel login
+            -npx vercel --prod
+
+    b.Through Github.
+        
+

@@ -13,7 +13,7 @@ For starting the server:  `npm run start:dev`
 - For checking Errors in code: `npm run lint`
 - For fixing formate of  code: `npm run prettier:fix`
   ## For checking easily:
-  (You can follow [sampleData.json](./sampleData.json)
+  (You can follow [sampleData.json](./sampleData.json))
 
 ## Main Section (50 Marks):
 
@@ -56,7 +56,7 @@ For starting the server:  `npm run start:dev`
         "inStock": true
     }
 
-
+    }
     ```
     
 - **Sample Response**:
@@ -107,7 +107,7 @@ For starting the server:  `npm run start:dev`
         "__v": 0
     }
 
-
+    }
     ```
     
 
@@ -486,6 +486,7 @@ For starting the server:  `npm run start:dev`
         "_id": "6650efbd017323d611c832c4",
         "__v": 0
     }
+    }
     ```
     - **Case-2: when the id doesn't; match with the product collection:**
       ```jsx
@@ -516,6 +517,7 @@ For starting the server:  `npm run start:dev`
             "__v": 0
         }
     ]
+    }
     //there are more orders
     ```
     
