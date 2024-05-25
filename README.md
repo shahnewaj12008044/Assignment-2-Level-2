@@ -15,6 +15,8 @@ For starting the server:  `npm run start:dev`
   ## For checking easily:
   (You can follow [sampleData.json](./sampleData.json))
 
+## vercel deployment linK:
+`https://assingment-chi.vercel.app/`
 ## Main Section (50 Marks):
 
 
