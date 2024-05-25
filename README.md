@@ -575,7 +575,7 @@ For starting the server:  `npm run start:dev`
 }
 ```
 
-### **Validation with Zod**
+### **Product and Order are Validated with Zod**
 
 
 
