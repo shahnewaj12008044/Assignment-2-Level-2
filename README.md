@@ -546,6 +546,8 @@ For starting the server:  `npm run start:dev`
 
 **Inventory Update**: 
 **Case-1: When a order is placed in an order collection the quantity of the product reduces according to the quantity of the order**
+
+
 **Case-2: If the Order quantity is bigger then the product.inventory.stock then :**
 ```jsx
 {
